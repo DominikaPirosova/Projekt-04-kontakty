@@ -9,3 +9,52 @@ body {
 h1 {
 	text-align: center;
 }
+
+.tym {
+	display: flex;
+    align-items: center;
+}
+
+.popis {
+	height:100px;
+}
+
+
+.osoba { 
+	border: 1px solid #C0C0C0;
+	margin: 10px;
+	border-radius: 5%;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0px 1px 2px #bdfaf4;
+	flex: 1 1 auto;
+}
+
+
+.foto img {
+	border-radius: 50%;
+	margin-top: 15px;
+}
+
+
+@media (min-width: 600px) and (max-width: 1100px) {
+	.tym {
+		flex-wrap: wrap;
+	}
+
+    .osoba {
+	flex: 1 1 33.3%;
+    }
+}
+
+@media (max-width: 600px) {
+	.tym {
+	flex-wrap: wrap;
+	}
+
+    .osoba {
+	flex: 1 1 50%;
+    }
+}
